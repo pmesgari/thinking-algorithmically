@@ -31,13 +31,11 @@ int calc_min_diff(int* members, int* seen, int* team_sums, int group) {
             break;
         }
     }
-
     for (j = i + 1; j < SIZE - 1; j++) {
         for (k = j + 1; k < SIZE; k++) {
             if (seen[i] || seen[j] || seen[k]) {
                 continue;
             }
-            printf("Group %d: (%d, %d, %d)\n", group, i + 1, j + 1, k + 1);
             seen[i] = 1;
             seen[j] = 1;
             seen[k] = 1;
