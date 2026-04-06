@@ -7,7 +7,7 @@ typedef struct Node {
     struct Node* next;
 } Node;
 
-int solve(int b, int i, int T, Node* parts[], int memo[][5]) {
+int solve(int b, int i, int T, Node* parts[], int memo[][T]) {
     if (b < 0) {
         return -1;
     }
