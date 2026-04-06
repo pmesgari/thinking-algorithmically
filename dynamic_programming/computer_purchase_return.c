@@ -62,12 +62,12 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    int i, T, n, c, v, t, B;
+    int i, T, N, c, v, t, B;
 
     fscanf(fin, "%d", &T);
-    fscanf(fin, "%d", &n);
+    fscanf(fin, "%d", &N);
 
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < N; i++) {
         fscanf(fin, "%d %d %d", &c, &v, &t);
         Node* new_node = (Node*)malloc(sizeof(Node));
         if (new_node == NULL) {
